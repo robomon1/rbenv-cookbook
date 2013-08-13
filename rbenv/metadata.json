@@ -1,0 +1,210 @@
+{
+  "name": "rbenv",
+  "description": "Installs and configures rbenv",
+  "long_description": "",
+  "maintainer": "Riot Games",
+  "maintainer_email": "jamie@vialstudios.com",
+  "license": "Apache 2.0",
+  "platforms": {
+    "centos": ">= 0.0.0",
+    "redhat": ">= 0.0.0",
+    "fedora": ">= 0.0.0",
+    "ubuntu": ">= 0.0.0",
+    "debian": ">= 0.0.0",
+    "amazon": ">= 0.0.0",
+    "oracle": ">= 0.0.0"
+  },
+  "dependencies": {
+    "git": ">= 0.0.0",
+    "build-essential": ">= 0.0.0",
+    "apt": ">= 0.0.0",
+    "ohai": ">= 1.1"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+    "rbenv": {
+      "display_name": "rbenv Hash",
+      "description": "Hash of rbenv attributes",
+      "type": "hash",
+      "choice": [
+
+      ],
+      "calculated": false,
+      "required": "optional",
+      "recipes": [
+
+      ]
+    },
+    "rbenv/user": {
+      "display_name": "rbenv user",
+      "description": "User to run rbenv as",
+      "default": "rbenv",
+      "choice": [
+
+      ],
+      "calculated": false,
+      "type": "string",
+      "required": "optional",
+      "recipes": [
+
+      ]
+    },
+    "rbenv/group": {
+      "display_name": "rbenv group",
+      "description": "Group to run rbenv as",
+      "default": "rbenv",
+      "choice": [
+
+      ],
+      "calculated": false,
+      "type": "string",
+      "required": "optional",
+      "recipes": [
+
+      ]
+    },
+    "rbenv/manage_home": {
+      "display_name": "Manage home for rbenv?",
+      "description": "Should the rbenv home be managed",
+      "default": "true",
+      "choice": [
+
+      ],
+      "calculated": false,
+      "type": "string",
+      "required": "optional",
+      "recipes": [
+
+      ]
+    },
+    "rbenv/group_users": {
+      "display_name": "Unknown",
+      "description": "Not sure what this property does.",
+      "type": "hash",
+      "choice": [
+
+      ],
+      "calculated": false,
+      "required": "optional",
+      "recipes": [
+
+      ]
+    },
+    "rbenv/git_repository": {
+      "display_name": "rbenv git repository",
+      "description": "Git repo for rbenv",
+      "default": "git://github.com/robomon1/rbenv-cookbook",
+      "choice": [
+
+      ],
+      "calculated": false,
+      "type": "string",
+      "required": "optional",
+      "recipes": [
+
+      ]
+    },
+    "rbenv/git_revision": {
+      "display_name": "rbenv git branch, tag, or commit",
+      "description": "Git branch, tag, or commit for rbenv repo",
+      "default": "master",
+      "choice": [
+
+      ],
+      "calculated": false,
+      "type": "string",
+      "required": "optional",
+      "recipes": [
+
+      ]
+    },
+    "rbenv/install_prefix": {
+      "display_name": "Installation dir prefix",
+      "description": "Installation directory prefix",
+      "default": "/opt",
+      "choice": [
+
+      ],
+      "calculated": false,
+      "type": "string",
+      "required": "optional",
+      "recipes": [
+
+      ]
+    },
+    "ruby_build/git_repository": {
+      "display_name": "ruby-build git repository",
+      "description": "Git repo for ruby-build",
+      "default": "git://github.com/sstephenson/ruby-build.git",
+      "choice": [
+
+      ],
+      "calculated": false,
+      "type": "string",
+      "required": "optional",
+      "recipes": [
+
+      ]
+    },
+    "ruby_build/git_revision": {
+      "display_name": "ruby_build git branch, tag, or commit",
+      "description": "Git branch, tag, or commit for ruby_build repo",
+      "default": "master",
+      "choice": [
+
+      ],
+      "calculated": false,
+      "type": "string",
+      "required": "optional",
+      "recipes": [
+
+      ]
+    },
+    "rbenv_vars/git_repository": {
+      "display_name": "rbenv git repository",
+      "description": "Git repo for rbenv-vars",
+      "default": "git://github.com/sstephenson/rbenv-vars.git",
+      "choice": [
+
+      ],
+      "calculated": false,
+      "type": "string",
+      "required": "optional",
+      "recipes": [
+
+      ]
+    },
+    "rbenv_vars/git_revision": {
+      "display_name": "rbenv-vars git branch, tag, or commit",
+      "description": "Git branch, tag, or commit for rbenv-vars repo",
+      "default": "master",
+      "choice": [
+
+      ],
+      "calculated": false,
+      "type": "string",
+      "required": "optional",
+      "recipes": [
+
+      ]
+    }
+  },
+  "groupings": {
+  },
+  "recipes": {
+    "rbenv::default": "Installs and configures rbenv",
+    "rbenv::ruby_build": "Installs and configures ruby_build",
+    "rbenv::ohai_plugin": "Installs an rbenv Ohai plugin to populate automatic_attrs about rbenv and ruby_build",
+    "rbenv::rbenv_vars": "Installs an rbenv plugin rbenv-vars that lets you set global and project-specific environment variables before spawning Ruby processes"
+  },
+  "version": "1.5.0"
+}
