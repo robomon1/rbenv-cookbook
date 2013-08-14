@@ -47,7 +47,7 @@
     "rbenv/user": {
       "display_name": "rbenv user",
       "description": "User to run rbenv as",
-      "default": "rbenv",
+      "default": "root",
       "choice": [
 
       ],
@@ -61,7 +61,7 @@
     "rbenv/group": {
       "display_name": "rbenv group",
       "description": "Group to run rbenv as",
-      "default": "rbenv",
+      "default": "root",
       "choice": [
 
       ],

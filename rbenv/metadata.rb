@@ -29,13 +29,13 @@ attribute "rbenv",
 attribute "rbenv/user",
   :display_name => "rbenv user",
   :description => "User to run rbenv as",
-  :default => 'rbenv'
+  :default => 'root'
   
 #default[:rbenv][:group]         = "rbenv"
 attribute "rbenv/group",
   :display_name => "rbenv group",
   :description => "Group to run rbenv as",
-  :default => 'rbenv'
+  :default => 'root'
   
 #default[:rbenv][:manage_home]   = true
 attribute "rbenv/manage_home",
